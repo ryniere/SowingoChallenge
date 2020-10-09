@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,9 +15,17 @@
 		41A2049B252E84BA00AA89AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A20499252E84BA00AA89AB /* LaunchScreen.storyboard */; };
 		41A204A6252E84BA00AA89AB /* SowingoChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A204A5252E84BA00AA89AB /* SowingoChallengeTests.swift */; };
 		41A204B1252E84BA00AA89AB /* SowingoChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A204B0252E84BA00AA89AB /* SowingoChallengeUITests.swift */; };
-		41A204C9252E8A5B00AA89AB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A204C8252E8A5B00AA89AB /* MainViewController.swift */; };
+		41A204C9252E8A5B00AA89AB /* ProductsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A204C8252E8A5B00AA89AB /* ProductsListViewController.swift */; };
 		41A204D1252F4EC500AA89AB /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A204D0252F4EC500AA89AB /* ProductService.swift */; };
 		41A204D6252F4F0E00AA89AB /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A204D5252F4F0E00AA89AB /* Result.swift */; };
+		41A204ED252FCC5000AA89AB /* ProductsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A204EC252FCC5000AA89AB /* ProductsListViewModel.swift */; };
+		41A20501252FD21800AA89AB /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A204FF252FD21800AA89AB /* ProductTableViewCell.swift */; };
+		41A20502252FD21800AA89AB /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41A20500252FD21800AA89AB /* ProductTableViewCell.xib */; };
+		41A2050B252FDB0E00AA89AB /* ImageView+Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A2050A252FDB0E00AA89AB /* ImageView+Download.swift */; };
+		41A20513252FF71900AA89AB /* NSAttributedString+StrikeThrough.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A20512252FF71900AA89AB /* NSAttributedString+StrikeThrough.swift */; };
+		4EB960BB626F0175C73802B7 /* Pods_SowingoChallenge_SowingoChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF31ED6575C60DE4802D2D7 /* Pods_SowingoChallenge_SowingoChallengeUITests.framework */; };
+		A35B86B94AECBBCD2FAAB979 /* Pods_SowingoChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C640485A42FD901DF6C3E6 /* Pods_SowingoChallengeTests.framework */; };
+		ADE78061BADF230A0A69252A /* Pods_SowingoChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1F74C5FDA493B120CC5F7F /* Pods_SowingoChallenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00C640485A42FD901DF6C3E6 /* Pods_SowingoChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SowingoChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0431675E5DB51C19A113C6FB /* Pods-SowingoChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SowingoChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-SowingoChallengeTests/Pods-SowingoChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		23D165675CBCAF0E31CF64A4 /* Pods-SowingoChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SowingoChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-SowingoChallengeTests/Pods-SowingoChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		3D768EAFA03437854FB484E3 /* Pods-SowingoChallenge-SowingoChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SowingoChallenge-SowingoChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-SowingoChallenge-SowingoChallengeUITests/Pods-SowingoChallenge-SowingoChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		41A2048B252E84B700AA89AB /* SowingoChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SowingoChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A2048E252E84B700AA89AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41A20490252E84B700AA89AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,9 +64,19 @@
 		41A204AC252E84BA00AA89AB /* SowingoChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SowingoChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A204B0252E84BA00AA89AB /* SowingoChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SowingoChallengeUITests.swift; sourceTree = "<group>"; };
 		41A204B2252E84BA00AA89AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		41A204C8252E8A5B00AA89AB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		41A204C8252E8A5B00AA89AB /* ProductsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListViewController.swift; sourceTree = "<group>"; };
 		41A204D0252F4EC500AA89AB /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
 		41A204D5252F4F0E00AA89AB /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		41A204EC252FCC5000AA89AB /* ProductsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListViewModel.swift; sourceTree = "<group>"; };
+		41A204FF252FD21800AA89AB /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		41A20500252FD21800AA89AB /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
+		41A2050A252FDB0E00AA89AB /* ImageView+Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageView+Download.swift"; sourceTree = "<group>"; };
+		41A20512252FF71900AA89AB /* NSAttributedString+StrikeThrough.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+StrikeThrough.swift"; sourceTree = "<group>"; };
+		4C1F74C5FDA493B120CC5F7F /* Pods_SowingoChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SowingoChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		695403D2F62D9D727AE095D0 /* Pods-SowingoChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SowingoChallenge.release.xcconfig"; path = "Target Support Files/Pods-SowingoChallenge/Pods-SowingoChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		78587E5F09EB9D7F83BAB462 /* Pods-SowingoChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SowingoChallenge.debug.xcconfig"; path = "Target Support Files/Pods-SowingoChallenge/Pods-SowingoChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		8A4552A8FF3A58DAF15266AB /* Pods-SowingoChallenge-SowingoChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SowingoChallenge-SowingoChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-SowingoChallenge-SowingoChallengeUITests/Pods-SowingoChallenge-SowingoChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		ECF31ED6575C60DE4802D2D7 /* Pods_SowingoChallenge_SowingoChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SowingoChallenge_SowingoChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADE78061BADF230A0A69252A /* Pods_SowingoChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A35B86B94AECBBCD2FAAB979 /* Pods_SowingoChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EB960BB626F0175C73802B7 /* Pods_SowingoChallenge_SowingoChallengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +114,8 @@
 				41A204A4252E84BA00AA89AB /* SowingoChallengeTests */,
 				41A204AF252E84BA00AA89AB /* SowingoChallengeUITests */,
 				41A2048C252E84B700AA89AB /* Products */,
+				7A4220F26590863482855DAA /* Pods */,
+				BE1CE2C1A0E9D6BBD8B40F12 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +132,8 @@
 		41A2048D252E84B700AA89AB /* SowingoChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				41A20509252FDAE900AA89AB /* Extensions */,
+				41A204FD252FD1EB00AA89AB /* Cells */,
 				41A204C6252E892100AA89AB /* Models */,
 				41A204C5252E891700AA89AB /* Services */,
 				41A204C4252E884800AA89AB /* Modules */,
@@ -140,7 +169,7 @@
 		41A204C4252E884800AA89AB /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				41A204C7252E8A2C00AA89AB /* Main */,
+				41A204C7252E8A2C00AA89AB /* ProductsList */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -161,12 +190,62 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		41A204C7252E8A2C00AA89AB /* Main */ = {
+		41A204C7252E8A2C00AA89AB /* ProductsList */ = {
 			isa = PBXGroup;
 			children = (
-				41A204C8252E8A5B00AA89AB /* MainViewController.swift */,
+				41A204C8252E8A5B00AA89AB /* ProductsListViewController.swift */,
+				41A204EC252FCC5000AA89AB /* ProductsListViewModel.swift */,
 			);
-			path = Main;
+			path = ProductsList;
+			sourceTree = "<group>";
+		};
+		41A204FD252FD1EB00AA89AB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				41A204FE252FD1F400AA89AB /* Product */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		41A204FE252FD1F400AA89AB /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				41A204FF252FD21800AA89AB /* ProductTableViewCell.swift */,
+				41A20500252FD21800AA89AB /* ProductTableViewCell.xib */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		41A20509252FDAE900AA89AB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				41A2050A252FDB0E00AA89AB /* ImageView+Download.swift */,
+				41A20512252FF71900AA89AB /* NSAttributedString+StrikeThrough.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7A4220F26590863482855DAA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				78587E5F09EB9D7F83BAB462 /* Pods-SowingoChallenge.debug.xcconfig */,
+				695403D2F62D9D727AE095D0 /* Pods-SowingoChallenge.release.xcconfig */,
+				8A4552A8FF3A58DAF15266AB /* Pods-SowingoChallenge-SowingoChallengeUITests.debug.xcconfig */,
+				3D768EAFA03437854FB484E3 /* Pods-SowingoChallenge-SowingoChallengeUITests.release.xcconfig */,
+				0431675E5DB51C19A113C6FB /* Pods-SowingoChallengeTests.debug.xcconfig */,
+				23D165675CBCAF0E31CF64A4 /* Pods-SowingoChallengeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BE1CE2C1A0E9D6BBD8B40F12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C1F74C5FDA493B120CC5F7F /* Pods_SowingoChallenge.framework */,
+				ECF31ED6575C60DE4802D2D7 /* Pods_SowingoChallenge_SowingoChallengeUITests.framework */,
+				00C640485A42FD901DF6C3E6 /* Pods_SowingoChallengeTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,9 +255,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41A204B5252E84BA00AA89AB /* Build configuration list for PBXNativeTarget "SowingoChallenge" */;
 			buildPhases = (
+				FA487C4E78394311DB4E0E4C /* [CP] Check Pods Manifest.lock */,
 				41A20487252E84B700AA89AB /* Sources */,
 				41A20488252E84B700AA89AB /* Frameworks */,
 				41A20489252E84B700AA89AB /* Resources */,
+				6EB4AB808FC100E8F0FB4A72 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -193,6 +274,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41A204B8252E84BA00AA89AB /* Build configuration list for PBXNativeTarget "SowingoChallengeTests" */;
 			buildPhases = (
+				93E7BD2CB7CB80FED18BB844 /* [CP] Check Pods Manifest.lock */,
 				41A2049D252E84BA00AA89AB /* Sources */,
 				41A2049E252E84BA00AA89AB /* Frameworks */,
 				41A2049F252E84BA00AA89AB /* Resources */,
@@ -211,9 +293,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41A204BB252E84BA00AA89AB /* Build configuration list for PBXNativeTarget "SowingoChallengeUITests" */;
 			buildPhases = (
+				9BE2559F797F6A50EDC682B6 /* [CP] Check Pods Manifest.lock */,
 				41A204A8252E84BA00AA89AB /* Sources */,
 				41A204A9252E84BA00AA89AB /* Frameworks */,
 				41A204AA252E84BA00AA89AB /* Resources */,
+				B030EF9AFF48222B1958C895 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -273,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41A2049B252E84BA00AA89AB /* LaunchScreen.storyboard in Resources */,
+				41A20502252FD21800AA89AB /* ProductTableViewCell.xib in Resources */,
 				41A20498252E84BA00AA89AB /* Assets.xcassets in Resources */,
 				41A20496252E84B700AA89AB /* Main.storyboard in Resources */,
 			);
@@ -294,17 +379,124 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6EB4AB808FC100E8F0FB4A72 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SowingoChallenge/Pods-SowingoChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SowingoChallenge/Pods-SowingoChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SowingoChallenge/Pods-SowingoChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93E7BD2CB7CB80FED18BB844 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SowingoChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BE2559F797F6A50EDC682B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SowingoChallenge-SowingoChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B030EF9AFF48222B1958C895 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SowingoChallenge-SowingoChallengeUITests/Pods-SowingoChallenge-SowingoChallengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SowingoChallenge-SowingoChallengeUITests/Pods-SowingoChallenge-SowingoChallengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SowingoChallenge-SowingoChallengeUITests/Pods-SowingoChallenge-SowingoChallengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA487C4E78394311DB4E0E4C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SowingoChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		41A20487252E84B700AA89AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				41A204D6252F4F0E00AA89AB /* Result.swift in Sources */,
+				41A20501252FD21800AA89AB /* ProductTableViewCell.swift in Sources */,
 				41A20493252E84B700AA89AB /* ViewController.swift in Sources */,
 				41A204D1252F4EC500AA89AB /* ProductService.swift in Sources */,
+				41A204ED252FCC5000AA89AB /* ProductsListViewModel.swift in Sources */,
 				41A2048F252E84B700AA89AB /* AppDelegate.swift in Sources */,
 				41A20491252E84B700AA89AB /* SceneDelegate.swift in Sources */,
-				41A204C9252E8A5B00AA89AB /* MainViewController.swift in Sources */,
+				41A20513252FF71900AA89AB /* NSAttributedString+StrikeThrough.swift in Sources */,
+				41A2050B252FDB0E00AA89AB /* ImageView+Download.swift in Sources */,
+				41A204C9252E8A5B00AA89AB /* ProductsListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +669,7 @@
 		};
 		41A204B6252E84BA00AA89AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78587E5F09EB9D7F83BAB462 /* Pods-SowingoChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -496,6 +689,7 @@
 		};
 		41A204B7252E84BA00AA89AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 695403D2F62D9D727AE095D0 /* Pods-SowingoChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -515,6 +709,7 @@
 		};
 		41A204B9252E84BA00AA89AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0431675E5DB51C19A113C6FB /* Pods-SowingoChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -537,6 +732,7 @@
 		};
 		41A204BA252E84BA00AA89AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23D165675CBCAF0E31CF64A4 /* Pods-SowingoChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -559,6 +755,7 @@
 		};
 		41A204BC252E84BA00AA89AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A4552A8FF3A58DAF15266AB /* Pods-SowingoChallenge-SowingoChallengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -579,6 +776,7 @@
 		};
 		41A204BD252E84BA00AA89AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D768EAFA03437854FB484E3 /* Pods-SowingoChallenge-SowingoChallengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
